@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Profile Card</title>
+    </head>
+    <body>
+        <h1 >profile card</h1>
+        <div class="container">
+            
+            <article data-testid="test-profile-card">
+                <header>
+                    <figure>
+                        <img src="./assets/profile.jpg" alt="avatar" data-testid="test-user-avatar">
+                    </figure>
+                    
+                    <h2 data-testid="test-user-name">big mara</h2>
+                    <h3 data-testid="test-user-jobtitle">frontend developer</h3>
+                </header>
+                <main>
+                    <p class="short-bio" data-testid="profile-card-Bio">
+                        I am a passionate and driven developer with a keen interest in web technologies. With a strong foundation in HTML, CSS, Vanilla JS, TypeScript, TailwindCSS and React, I enjoy building intuitive and responsive web applications. 
+                        <span id="text" style="display: none;">
+                            My goal is to create seamless digital experiences that blend creativity with functionality. Constantly learning and exploring new trends in tech, I strive to improve my skills and contribute meaningfully to projects. When not coding, I read about emerging technologies and collaborating with like-minded individuals.
+                        </span>
+                        <button id="toggleBtn">Read more</button>
+                    </p>
+                    <p class="current-time" data-testid="test-user-time"></p>
+                    <section class="hobbies">
+                        <div>Hobbies:</div>
+                        <ul data-testid="test-user-hobbies">
+                            <li class="list">Coding</li>
+                            <li class="list">Researching</li>
+                            <li class="list">Music</li>
+                            <li class="list">Writing</li>
+                        </ul>
+                    </section>
+                    <section class="Not-hobbies">
+                        <div>Not Hobbies</div>
+                        <ul data-testid="test-user-dislikes">
+                            <li class="list">Parties</li>
+                            <li class="list">Dancing</li>
+                        </ul>
+                    </section>
+                </main>
+                <footer>
+                    <div class="social-links" data-testid="test-user-social-links">
+                        <a href="https://www.linkedin.com/in/mara-ruthy-2b6a5032b" target="_blank" data-testid="test-user-social-likedin">LinkedIn</a>
+                        <a href="https://www.github.com/maracodez" target="_blank" data-testid="test-user-social-github" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.Twitter.com/AmarachiRu61725" target="_blank" data-testid="test-user-social-twitter">Twitter</a>
+                    </div>
+                </footer>
+            </article>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
